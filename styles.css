@@ -85,6 +85,54 @@ body {
     background-color: var(--color-bg);
     overflow-x: hidden;
 }
+.legal-page {
+  padding: 80px 20px;
+  background: #f9fafb;
+}
+
+.legal-container {
+    
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.legal-container h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.last-updated {
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+.legal-container h2 {
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+.legal-container h3 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.legal-container p {
+  margin: 10px 0;
+  line-height: 1.7;
+}
+
+.legal-container ul {
+  margin: 10px 0 10px 20px;
+}
+
+.footer-note {
+  margin-top: 40px;
+  font-weight: 500;
+}
 
 a {
     color: inherit;
@@ -117,6 +165,7 @@ button {
     margin: 0 auto;
     padding: 0 var(--container-padding);
 }
+
 
 /* =====================================================
    Typography
@@ -603,12 +652,24 @@ h1, h2, h3, h4, h5, h6 {
     background: #fff;
     border-radius: var(--radius-sm);
 }
+.browser-content  {
+    height: 350px;
+    flex: 1;
+    /* height: 1000 px; */
+    width:1000 px; 
+    background-image: url("f1.webp");
+    background-size: cover;        /* makes image cover entire area */
+    background-position: center;   /* center the image */
+    background-repeat: no-repeat;  /* prevent tiling */
+    border-radius: var(--radius-md);
+    opacity: 0.8;
+}
 
-.browser-content {
+/* .browser-content {
     height: 350px;
     background: linear-gradient(180deg, #f8fafc, #fff);
     padding: 1.5rem;
-}
+} */
 
 .demo-site {
     height: 100%;
@@ -623,12 +684,34 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: var(--radius-sm);
 }
 
-.demo-hero {
+/* .demo-hero {
     flex: 1;
     background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
     border-radius: var(--radius-md);
     opacity: 0.8;
-}
+} */
+/* .demo-hero {
+    flex: 1;
+    background: 
+        linear-gradient(135deg, var(--color-secondary), var(--color-accent)),
+        url("D://FF2//f.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: var(--radius-md);
+} */
+
+/* .demo-hero {
+    flex: 1;
+    height: 100 px;
+    width:100 px; 
+    background-image: url("f.png");
+    background-size: cover;        /* makes image cover entire area */
+    /* background-position: center;   /* center the image */
+    /* background-repeat: no-repeat;  prevent tiling */
+    /* border-radius: var(--radius-md); */
+    /* opacity: 0.8;
+} */ 
 
 .demo-grid {
     display: grid;
@@ -851,13 +934,21 @@ section {
 }
 
 /* Feature Visuals */
-.feature-visual {
+/* .feature-visual {
     background: var(--color-bg-alt);
     border-radius: var(--radius-lg);
     padding: 1.5rem;
     min-height: 200px;
+} */
+.feature-visual {
+    position: relative;
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    min-height: 200px;
+    background: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("f3.png") center/cover no-repeat;
 }
-
 .visual-editor {
     display: flex;
     gap: 1rem;
@@ -979,6 +1070,8 @@ section {
     overflow: hidden;
 }
 
+
+
 .template-overlay {
     position: absolute;
     inset: 0;
@@ -990,7 +1083,7 @@ section {
     gap: 1rem;
     opacity: 0;
     transition: opacity var(--transition-base);
-}
+} 
 
 .template-card:hover .template-overlay {
     opacity: 1;
@@ -1644,4 +1737,86 @@ section {
 .fade-up.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* =========================================
+   Legal Pages (Refund / Privacy / Terms)
+   ========================================= */
+
+.legal-wrapper {
+    padding: 120px 20px 80px;
+    background: #f8fafc;
+    min-height: 100vh;
+}
+
+.legal-box {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 60px;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.legal-header {
+    margin-bottom: 40px;
+}
+
+.legal-header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.legal-updated {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.legal-box h2 {
+    font-size: 22px;
+    margin-top: 35px;
+    margin-bottom: 12px;
+}
+
+.legal-box h3 {
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+.legal-box p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #374151;
+    margin-bottom: 16px;
+}
+
+.legal-box ul {
+    margin: 10px 0 20px 20px;
+}
+
+.legal-box ul li {
+    margin-bottom: 8px;
+    line-height: 1.7;
+}
+
+.legal-divider {
+    hef.pngght: 1px;
+    background: #e5e7eb;
+    margpngn: 40px 0;
+}
+
+/* Back Button */
+.legal-back {
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4f46e5;
+    transition: 0.3s ease;
+}
+
+.legal-back:hover {
+    color: #7c3aed;
 }
