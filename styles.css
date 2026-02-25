@@ -1802,9 +1802,9 @@ section {
 }
 
 .legal-divider {
-    hef.pngght: 1px;
+    height: 1px;
     background: #e5e7eb;
-    margpngn: 40px 0;
+    margin: 40px 0;
 }
 
 /* Back Button */
